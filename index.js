@@ -30,6 +30,37 @@ const questions = [
     type: "input",
     message: "What is your project name?",
     name: "title"
+},
+{
+    type: "list",
+    message: "Which license will be used?",
+    name: "license",
+    choices: ["mit","other"]
+},
+{
+    type: "input",
+    message: "Please describe your project.",
+    name: "description"
+},
+{
+    type: "input",
+    message: "Please describe how to install your project.",
+    name: "installation"
+},
+{
+    type: "input",
+    message: "Please describe contribution guidelines.",
+    name: "guidelines"
+},
+{
+    type: "input",
+    message: "Please describe what this should be used for.",
+    name: "usage"
+},
+{
+    type: "input",
+    message: "Please describe testing guidelines.",
+    name: "testing"
 }
 ];
 
