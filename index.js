@@ -8,7 +8,7 @@ const mkDownGenerator = require('./utils/generateMarkdown');
 
 //Define File Name
 
-const fileName ="MReadME.txt";
+const fileName ="MReadME.md";
 
 
 // array of questions for user
