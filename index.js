@@ -16,7 +16,7 @@ const questions = [
 {
     type: "input",
     message: "What is your Github Username?",
-    name: "userName"
+    name: "username"
 
 },
 {
@@ -35,7 +35,7 @@ const questions = [
     type: "list",
     message: "Which license will be used?",
     name: "license",
-    choices: ["mit","other"]
+    choices: ["mit","apache","GNU","none","other"]
 },
 {
     type: "input",
