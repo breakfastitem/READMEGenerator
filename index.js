@@ -8,8 +8,6 @@ const mkDownGenerator = require('./utils/generateMarkdown');
 
 //Define File Name
 
-const fileName ="MReadME.md";
-
 
 // array of questions for user
 const questions = [
@@ -67,6 +65,7 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, data) {
     const markDownString = mkDownGenerator(data);
+    const fileName= data.title+".md";
 
     fs.writeFile(fileName, markDownString , (err) => {
         if(err){
