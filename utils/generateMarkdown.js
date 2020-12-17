@@ -1,8 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-
-  return `# ${data.title}
   
+  return `# ${data.title}
   ## Table of Contents
 
   [Description](#description)
@@ -18,6 +17,8 @@ function generateMarkdown(data) {
   [License](#license)
 
   ## Description
+
+  ![](https://img.shields.io/badge/License-${data.license}-green)
 
   ${data.description}
 
@@ -39,7 +40,7 @@ function generateMarkdown(data) {
 
   ## license
 
-  ${data.license}
+  This repo is covered by the ${data.license} license
 
   ## Questions
 
