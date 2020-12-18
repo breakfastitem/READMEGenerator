@@ -6,6 +6,8 @@ const inquirer= require('inquirer');
 
 const mkDownGenerator = require('./utils/generateMarkdown');
 
+
+
 //Define File Name
 
 
@@ -52,7 +54,7 @@ const questions = [
 },
 {
     type: "input",
-    message: "Please describe what this should be used for.",
+    message: "Please describe how this can be used.",
     name: "usage"
 },
 {
@@ -63,9 +65,9 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(data) {
     const markDownString = mkDownGenerator(data);
-    const fileName= data.title+".md";
+    let fileName= data.title+".md";
 
     fs.writeFile(fileName, markDownString , (err) => {
         if(err){
@@ -78,7 +80,7 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-    inquirer.prompt(questions).then((response)=>writeToFile(fileName,response));
+    inquirer.prompt(questions).then((response)=>writeToFile(response));
 }
 
 // function call to initialize program
