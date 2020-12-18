@@ -16,6 +16,8 @@ function generateMarkdown(data) {
 
   [License](#license)
 
+  [Questions](#questions)
+
   ## Description
 
   ![](https://img.shields.io/badge/License-${data.license}-green)
